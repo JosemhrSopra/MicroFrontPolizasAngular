@@ -1,0 +1,21 @@
+<div class="card my-5">
+  <div class="card-body">
+    <h1>Lista de todas las polizas disponibles</h1>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">numpoliza</th>
+          <th scope="col">estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let poliza of polizas; let i = index">
+          <td>{{ poliza.idpoliza }}</td>
+          <td>{{ poliza.numpoliza }}</td>
+          <td>{{ poliza.estado }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
